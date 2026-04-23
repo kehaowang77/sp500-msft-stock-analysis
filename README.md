@@ -7,19 +7,19 @@ This project completes the required empirical data analysis for ACC102 Track 2 M
 
 ### Data Source
 - Database Platform: WRDS (Wharton Research Data Services)
-- Original Dataset: CRSP Monthly Stock File (`crsp.msf`)
+- Original Dataset: CRSP Monthly Stock File (crsp.msf)
 - Target Firm: Microsoft Corporation (CRSP Permanent Number: PERMNO = 10107)
 - Time Range: April 1986 to December 2024
 - Extracted Variables:
-  - `date`: Monthly trading date
-  - `ret`: Monthly total stock return
-  - `vol`: Monthly trading volume
+  - date: Monthly trading date
+  - ret: Monthly total stock return
+  - vol: Monthly trading volume
 
 ### Tools & Programming Libraries
 - Python 3
-- `wrds`: WRDS database official connection interface
-- `pandas`: Tabular data processing and cleaning
-- `matplotlib`: Time-series chart visualization
+- wrds: WRDS database official connection interface
+- pandas: Tabular data processing and cleaning
+- matplotlib: Time-series chart visualization
 
 ### Full Project Workflow
 1.  Import required Python libraries
@@ -33,17 +33,20 @@ This project completes the required empirical data analysis for ACC102 Track 2 M
 9.  Safe closure of WRDS database connection session
 
 ### Key Project Outputs
-1.  Cleaned structured stock dataset
-2.  Descriptive statistics table
-3.  Dual-axis trend plot of monthly return and trading volume
-4.  Calculated long-term risk and return financial indicators
+- Cleaned structured stock dataset
+- Descriptive statistics table
+- Dual-axis trend plot of monthly return and trading volume
+- Calculated long-term risk and return financial indicators
 
 ### How to Run the Code
-1.  Install all dependent libraries in advance: `wrds`, `pandas`, `matplotlib`
+1.  Install all dependent libraries in advance: wrds, pandas, matplotlib
 2.  Open the `analysis.ipynb` Jupyter Notebook file
 3.  Run all code cells in sequential order
 4.  Enter personal WRDS username in the database connection cell
 5.  All charts and statistical results will be generated automatically
 
 ### AI Disclosure
-All code framework, analysis logic and operation steps follow the in-class teaching content of ACC102. AI tools are only used for auxiliary document sorting and standard README format optimization. All data query logic and financial calculation principles are completed according to course requirements.
+- AI tool: Doubao
+- Access date: April 2026
+- Usage: AI was only used for explanatory guidance on difficult technical steps, including SQL query logic clarification, date formatting, missing value processing, dual-axis plotting configuration, and debugging the WRDS connection closing error. AI provided the corrected stable code `db.engine.dispose()` to replace the faulty `db.close()` method.
+- All core project logic, code implementation, data analysis, GitHub repository organisation, and document writing were completed independently based on ACC102 in-class teaching materials. AI was not used to generate full code or core analysis content.
